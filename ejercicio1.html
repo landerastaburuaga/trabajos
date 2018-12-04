@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ejercicio1.css">
+<style>
+</style>
+</head>
+<body>
+	<div class="contenedor" id="laukia01" onclick="ocultar()" onclick="visibilizar()">
+	</div>
+	
+<script type="text/javascript">
+	laukia01 = document.getElementById("laukia01")
+	function ocultar(){
+	laukia01.style.visibility = "hidden";
+	}
+	function visibilizar(){
+	laukia01.style.visibility = "visible";
+	}
+	laukia01.addEventListener("click", ocultar);
+	
+	
+</script>
+</body>
