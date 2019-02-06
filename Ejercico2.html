@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+        .cuadrado1 {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top:"0px";
+            left:"0px";
+        }
+
+        .cuadrado4 {
+            width: 40px;
+            height: 40px;
+            background-color: ;
+            position: absolute;
+            top:"0px";
+            left:"0px";
+        }
+
+        .cuadrado2 {
+            width: 497px;
+            height: 497px;
+
+            border-style: solid;
+            border-width: 5px;
+            border-color: blue;
+            background-image: url("fondo.jpg");
+            position: absolute;
+            top:"0px";
+            left:"0px";
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cuadrado2" class="cuadrado2"></div>
+    <div id="cuadrado4" class="cuadrado4"></div>
+    <div id="cuadrado1" class="cuadrado1"><img id="myImg" class="cuadrado1" src="11005_1.png" title="Foto11" alt="Foto11" width="80" height="80"> </div>
+    
+
+
+    <script>
+        function keyboard (key) {
+            //console.log(key.keyCode)
+               
+
+
+            if (x<=15){(key.keyCode == 37)
+                console.log("right")}
+                else if (key.keyCode == 37) {(x = x - dx)&&(document.getElementById("myImg").src = "11005_2.png")}  
+              if (key.keyCode == 39) {
+
+                ((x = x + dx)&&(document.getElementById("myImg").src = "11005_3.png"))
+            }           
+            if (x<=430){(key.keyCode == 39)
+                console.log("left")}
+                else if (key.keyCode == 39) {x = x - dx}  
+
+
+
+            if (y<=15){(key.keyCode == 38)
+                console.log("top")}
+                else if (key.keyCode == 38) {(y = y - dy)&&(document.getElementById("myImg").src = "11005_1.png")}  
+              if (key.keyCode == 40) {
+
+                ((y = y + dy)&&(document.getElementById("myImg").src = "11005_4.png"))
+            }           
+            if (y<=430){(key.keyCode == 40)
+                console.log("down")}
+                else if (key.keyCode == 40) {y = y - dy}  
+   
+            if (key.keyCode == 39 &&key.keyCode == 37) {document.getElementById("myImg").src = "11005_4.png"}
+          
+            c1.style.left = x + "px";
+            c1.style.top = y + "px";
+
+};
+
+        c1 = document.getElementById("cuadrado1");
+        document.addEventListener("keydown", keyboard)
+        //
+        x = 150;
+        dx = 10;
+        y = 150;
+        dy = 10;
+        c1.style.left = x + "px";
+        c1.style.top = y + "px";
+
+        c2 = document.getElementById("cuadrado4");
+
+
+    
+        
+    </script>
+
+</body>
+</html>
