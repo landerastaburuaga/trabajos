@@ -16,8 +16,8 @@ z = x + y
 //console.log (z)
 z = 0
 while (z != 10) {
-    z = Math.floor((Math.random() * 500001)); 
-    console.log("el valor de z es:" + z)
-if (z > 10) {console.log("es mayor que 10")}
-else if (z < 10) {console.log("es menor que 10")}
-else if (z == 10) {console.log("es igual que 10")}}
+    z = Math.floor((Math.random() * 51)); 
+    console.log("el valor de z es:" + z)}
+//if (z > 10) {console.log("es mayor que 10")}
+//else if (z < 10) {console.log("es menor que 10")}
+//else if (z == 10) {console.log("es igual que 10")}}
