@@ -34,11 +34,9 @@ console.log(tiempo[5].dia + " " + tiempo[5].cielo)
 */
 
 var i;
-console.log("Dias llueviosos:")
 for (i = 0; i < tiempo.length; i++){ 
     if(tiempo[i].cielo == "lluvia"){
-    //console.log(tiempo[i].dia + " " + tiempo[i].cielo + " " + tiempo[i].temperatura)
-     console.log(tiempo[i].dia)
+    console.log(tiempo[i].dia + " " + tiempo[i].cielo + " " + tiempo[i].temperatura)
 }}
 
 /*
@@ -46,5 +44,3 @@ Crear una página HTML con los datos anteriores usando las imágenes (sol, nubes
 nube: http://www.euskalmet.euskadi.eus/appcont/meteorologia/meteodat/images/12.png
 ...
 */
-
-
